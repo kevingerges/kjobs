@@ -5,7 +5,6 @@ driver = webdriver.Chrome()
 driver.get("https://airtable.com/embed/appjDG7vmPOm1pO7S/shrS1OCRlsl1hkXqC/tblLP4AtskrLA8Aw1?viewControls=on")
 driver.implicitly_wait(5)
 
-# Find and extract job titles
 job_titles = driver.find_elements(By.CLASS_NAME, "cell.primary.read")
 print("Job Titles:")
 num = 0
